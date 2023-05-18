@@ -1,0 +1,42 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Reservations</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='{% static 'Reservations/reservations.css' %}'>
+    <script src='main.js'></script>
+    <link rel="icon" type="image/x-icon" href="Reservations/logo themed.png">
+</head>
+<body>
+    <header>
+        <img class="logo" src={% static 'Reservations/logo themed.png' %} width="190px" height="140px">
+        <nav>
+            <ul class="navlinks">
+                <li> <a href="{% url 'Unique' %}">Home</a></li>
+                <li> <a href="{% url 'reservations' %}">Reservations</a></li>
+                <li> <a href="{% url 'ContactUs' %}">Contact Us</a></li>
+                <li> <a href="{% url 'main' %}">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class ="fields">
+    <div class ="row1">
+        <div class = "leftside">
+            <a class="button" href="{% url 'SquashRes' %}">Reserve your <br>Squash Court</a>
+        </div>
+
+        <div class = "rightside">
+            <a class="button" href="{% url 'ResFoot' %}">Reserve your <br>Football Ground</a>
+        </div>
+
+    </div>
+
+    <div class ="row2">
+        <a class="button" href="{% url 'ReservationsTennis' %}">Reserve your <br>Tennis Field</a>
+    </div>
+</div>
+</body>
+</html>

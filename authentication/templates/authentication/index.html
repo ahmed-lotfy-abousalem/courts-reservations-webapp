@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href ="{% static 'authentication/authentication.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+  <h3>Welcome To Sports Pro!</h3>
+
+  {% if user.is_authenticated %}
+  <h3>Hello {{ fname }} </h3>
+  <h4>You have successfully Logged In.</h4>
+  <button type="submit"><a href="/signout">Sign out</button>
+  <li> <a href="{% url 'Unique' %}">Home</a></li>
+    {% else %}
+  <button type="submit"><a href="/signup">Sign Up</button>
+  <button type="submit"><a href="/signin">Sign in</button>
+    {% endif %}
+  
+    </body>
+</html>

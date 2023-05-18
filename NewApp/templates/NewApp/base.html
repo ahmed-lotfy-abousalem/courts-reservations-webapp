@@ -1,0 +1,21 @@
+<html> 
+    <head> 
+        <title>Sports Bro</title>
+        <link rel = "stylesheet" href ="{% static 'NewApp/homepage.css' %}">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src={% static 'NewApp/logo1.png' %} class="logo">
+                <ul>
+                    <li> <a href="{% url 'Unique' %}">Home</a></li>
+                    <li> <a href="{% url 'reservations' %}">Reservations</a></li>
+                    <li> <a href="{% url 'ContactUs' %}">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        {% block my_block%}
+
+        {%endblock%} 
+    </body>
+</html>

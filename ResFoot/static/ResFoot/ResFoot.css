@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'ethnocentric' ;
+    src: url(ethnocentric\ rg.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;  
+    
+}
+
+.background{
+    background-image: linear-gradient(rgba(0,0,0,0.80),rgba(0, 0, 0, 0.60)),url(CG_Football_4G_pitch_1-scaled.jpg);
+    background-size:cover;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    background-color: transparent;
+    background-size:cover;
+    
+}
+
+.logo{
+    cursor: pointer;
+  
+}
+
+.navlinks{
+    list-style: none;
+}
+
+
+.navlinks li{
+  
+    display: inline-block;
+    padding: 0px 20px;
+    border: 10px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.navlinks li a{
+    color:white;
+    font-weight: 300;
+    text-decoration: none;
+    font-family:'montserrrat' , sans-serif;
+    font-size: 19px;
+}
+
+.navlinks li:hover{
+background-color: rgb(255, 57, 57);
+}
+
+.content{
+    display: flex;
+    height: 100vh;
+    width:100%;
+    
+}
+
+.brief{
+    height: 100vh;
+    width: 30%;
+    background-color: rgba(128, 0, 0, 0.332);
+    font-family: 'montserrat';
+    color: antiquewhite;
+    font-size: 24px;
+}
+
+
+
+.container{
+    height:50vh;
+    width: 40%;
+    display: flex;
+    position: relative;
+    top: 25%;
+    left: 18%;
+    color: white;
+    font-family: 'Montserrat';
+    background-color: rgb(29, 28, 62); 
+    border-radius: 15%;
+}
+
+.left{
+    width:60%;
+    padding:20px;
+}
+
+.calendar{
+    position:relative;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;  
+    flex-wrap: wrap;      
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 25px;
+    color: rgb(67, 67, 67);
+}
+
+.calendar .months {
+position: relative;
+width: 100%;
+height: 90px;
+display: flex;
+align-items: center;
+justify-content:space-between;
+font-size: 1.2rem;
+font-weight: 500;
+text-transform:uppercase;
+}
+
+.calendar .months .prev,
+.calendar .months .next{
+cursor: pointer;
+transition: 0.25s;
+}
+
+.calendar .months .prev:hover,
+.calendar .months .next:hover{
+color: plum;
+}
+
+.calendar .weekdays{
+    width: 100%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 500;  
+}
+
+.calendar .days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin: 0%;
+   
+}
+
+.calendar .days .day{
+    width: 12.1%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: plum;
+    border: 1px solid;
+    border-radius: 15%;
+    border-color: rgb(255, 195, 255); 
+    transform: translateY(-30%);     
+    transition: 0.25s;  
+}
+
+.calendar .days .day:not(.prev-date, .next-date):hover{
+    color: white;
+    background-color: plum;
+}
