@@ -65,7 +65,7 @@ background-color: rgb(255, 57, 57);
 
 .brief{
     height: 100vh;
-    width: 50%;
+    width: 30%;
     background-color: rgba(128, 0, 0, 0.332);
     font-family: 'montserrat';
     color: antiquewhite;
@@ -88,7 +88,7 @@ background-color: rgb(255, 57, 57);
 }
 
 .left{
-    width:60%;
+    width:40%;
     padding:20px;
 }
 
@@ -107,7 +107,7 @@ background-color: rgb(255, 57, 57);
 
 .calendar .months {
 position: relative;
-width: 100%;
+width: 60%;
 height: 90px;
 display: flex;
 align-items: center;

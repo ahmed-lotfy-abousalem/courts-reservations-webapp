@@ -128,6 +128,13 @@
                 </div>
             </div>
         </div>
+        <div class = "right">
+            <form method="POST" action="{% url 'save_date' %}">
+                {% csrf_token %}
+                <input type="date" id="selected_date" name="selected_date" required>
+                <button type="submit">Submit</button>
+              </form>                     
+        </div>
     </div>  
     </div>
     </div>
