@@ -1,2 +1,21 @@
-<h1>Success!</h1>
-<p>The selected date, {{ selected_date }}, has been saved.</p>
+{% load static%}
+<div class="navbar">
+    <head>
+        <link rel='stylesheet' type='text/css' media='screen' href='{% static "SquashRes/success.css" %}'>
+    </head>
+        <img src="{% static 'SquashRes/logo1.png' %}" class="logo">
+    <ul>
+      <li><a href="{% url 'Unique' %}">Home</a></li>
+      <li><a href="{% url 'reservations' %}">Reservations</a></li>
+      <li><a href="{% url 'ContactUs' %}">Contact Us</a></li>
+      <li><a href="{% url 'main' %}">My Account</a></li>
+    </ul>
+  </div>
+  
+  <div class="success-container">
+    <h1>Success!</h1>
+    <p>The selected date, {{ selected_date }}, has been saved.</p>
+    <button class="home-button">Home</button>
+  </div>
+</div>
+  
