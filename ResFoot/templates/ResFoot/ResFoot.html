@@ -35,7 +35,42 @@
     </header>
     <div class="content">
     <div class="brief">
-        this is brief
+        <h1>Football Field Reservation Rules</h1>
+        <br>
+        <br>
+
+
+        <ul>
+            <li>Reservation Time: Specific time slots are available for booking.</li>
+            <br>
+            <li>Booking Duration: Minimum and maximum reservation durations apply.</li>
+            <br>
+
+            <li>Advance Booking: Reservations can be made within a specified time frame before the desired date.</li>
+            <br>
+
+            <li>Cancellation Policy: Rules and penalties for canceling reservations.</li>
+            <br>
+
+            <li>Reservation Limits: Maximum number of reservations per user within a given time period.</li>
+            <br>
+
+            <li>Member Priority: Registered members receive advanced booking or discounted rates.</li>
+            <br>
+
+            <li>Payment: Accepted payment methods and deadlines.</li>
+            <br>
+
+            <li>Refunds: Conditions for issuing refunds, such as field closure or maintenance issues.</li>
+            <br>
+
+            <li>Code of Conduct: Expected behavior, fair play, and adherence to rules and regulations.</li>
+            <br>
+
+            <li>Safety Guidelines: Mandatory equipment and safety precautions for players.</li>
+            <br>
+
+          </ul>
     </div>
     <div class="container">
         <div class="left">
@@ -92,6 +127,13 @@
                     <div class="day next-date">1</div>
                 </div>
             </div>
+        </div>
+        <div class = "right">
+            <form method="POST" action="{% url 'save_date' %}">
+                {% csrf_token %}
+                <input type="date" id="selected_date" name="selected_date" required>
+                <button type="submit">Submit</button>
+              </form>                     
         </div>
     </div>  
     </div>

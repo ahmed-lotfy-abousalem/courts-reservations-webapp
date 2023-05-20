@@ -1,0 +1,25 @@
+{% load static %}
+<html> 
+    <head> 
+        <title>Sports Bro</title>
+        <link rel = "stylesheet" href ="{% static 'ResFoot/success.css' %}">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src={% static 'ResFoot/logo1.png' %} class="logo">
+                <ul>
+                    <li> <a href="{% url 'Unique' %}">Home</a></li>
+                    <li> <a href="{% url 'reservations' %}">Reservations</a></li>
+                    <li> <a href="{% url 'ContactUs' %}">Contact Us</a></li>
+                    <li> <a href="{% url 'main' %}">My Account</a></li>
+                </ul>
+            </div>
+            <div class="success-container">
+                <h1>Success!</h1>
+                <p>The selected date, {{ selected_date }}, has been saved.</p>
+                <button  onclick="location.href='{% url 'Unique' %}'" class="home-button">Home</button>
+              </div>
+        </div>
+    </body>
+</html>
