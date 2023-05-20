@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'ethnocentric' ;
-    src: url(ethnocentricrg.otf);
+    src: url(ethnocentric\ rg.otf);
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
@@ -168,4 +168,11 @@ color: plum;
 .calendar .days .day:not(.prev-date, .next-date):hover{
     color: white;
     background-color: plum;
+}
+
+.container .right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -88,7 +88,7 @@ background-color: rgb(255, 57, 57);
 }
 
 .left{
-    width:40%;
+    width:60%;
     padding:20px;
 }
 
@@ -107,7 +107,7 @@ background-color: rgb(255, 57, 57);
 
 .calendar .months {
 position: relative;
-width: 60%;
+width: 100%;
 height: 90px;
 display: flex;
 align-items: center;
@@ -168,4 +168,11 @@ color: plum;
 .calendar .days .day:not(.prev-date, .next-date):hover{
     color: white;
     background-color: plum;
+}
+
+.container .right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
